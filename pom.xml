@@ -16,8 +16,13 @@
   <url>https://github.com/PavelTsekhanovich/SpringInAction</url>
 
   <properties>
-    <spring-framework.version>4.3.5.RELEASE</spring-framework.version>
-    <junut.version>3.8.1</junut.version>
+    <spring.group>org.springframework</spring.group>
+    <spring.version>3.0.2.RELEASE</spring.version>
+    <junut.version>4.5</junut.version>
+    <mockito-all.version>1.8.0</mockito-all.version>
+    <mockito-core.version>1.8.0</mockito-core.version>
+    <cglib-nodep.version>2.2</cglib-nodep.version>
+    <aspectjweaver.version>1.6.4</aspectjweaver.version>
   </properties>
 
   <build>
