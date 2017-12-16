@@ -10,6 +10,7 @@
   <modules>
     <module>example</module>
     <module>knight</module>
+      <module>snippets</module>
   </modules>
 
   <name>springinaction</name>
@@ -23,6 +24,7 @@
     <mockito-core.version>1.8.0</mockito-core.version>
     <cglib-nodep.version>2.2</cglib-nodep.version>
     <aspectjweaver.version>1.6.4</aspectjweaver.version>
+    <javax-ejb.version>3.0</javax-ejb.version>
   </properties>
 
   <build>
