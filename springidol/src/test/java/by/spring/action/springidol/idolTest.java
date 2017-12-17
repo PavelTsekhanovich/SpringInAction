@@ -27,10 +27,7 @@ public class idolTest {
     public void carlShouldBeWiredWithKennysSong() {
         Instrumentalist kenny = (Instrumentalist) context.getBean("kenny");
         Instrumentalist carl = (Instrumentalist) context.getBean("carl");
-
-        System.out.print(kenny);
-
-        //assertEquals(kenny.getSong(), carl.getSong());
+        assertEquals(kenny.getSong(), carl.getSong());
     }
 
     @Test
