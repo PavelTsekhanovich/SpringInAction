@@ -1,6 +1,6 @@
 package by.spring.action;
 
-public class Guitar implements Instrument {
+public class Guitar implements Instrument{
 
     @Override
     public void play() {

@@ -1,4 +1,4 @@
-package by.spring.action;
+/*package by.spring.action;
 
 import static org.junit.Assert.*;
 
@@ -10,8 +10,9 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("spring-idol.xml")
+@ContextConfiguration("spring-idol-annotation.xml")
 public class AnnotationConfigTest {
+
     @Autowired
     @Qualifier("eddie")
     private Instrumentalist eddie;
@@ -25,4 +26,4 @@ public class AnnotationConfigTest {
         assertNotNull(eddie.getInstrument());
         assertEquals(guitar, eddie.getInstrument());
     }
-}
+}*/

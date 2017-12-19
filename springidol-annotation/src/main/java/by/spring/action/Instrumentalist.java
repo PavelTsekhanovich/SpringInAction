@@ -2,28 +2,24 @@ package by.spring.action;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class Instrumentalist implements Performer {
-
-    private String song;
+public class Instrumentalist implements Performer{
 
     @Autowired
     private Instrument instrument;
+
+    private String song;
 
     @Autowired
     public Instrumentalist(Instrument instrument) {
         this.instrument = instrument;
     }
 
-    public String getSong() {
-        return song;
-    }
-
     public void setSong(String song) {
         this.song = song;
     }
 
-    public Instrument getInstrument() {
-        return instrument;
+    public String getSong() {
+        return song;
     }
 
     @Autowired
@@ -31,14 +27,17 @@ public class Instrumentalist implements Performer {
         this.instrument = instrument;
     }
 
-    @Autowired
-    public void heresYourInstrument(Instrument instrument) {
-        this.instrument = instrument;
+    public Instrument getInstrument() {
+        return instrument;
     }
 
-    @Override
     public void perform() throws PerformanceException {
         System.out.print("Playing " + song + " : ");
         instrument.play();
+    }
+
+    @Autowired
+    public void heresYourInstrument(Instrument instrument) {
+        this.instrument = instrument;
     }
 }
