@@ -11,7 +11,8 @@
     <module>knight</module>
     <module>snippets</module>
     <module>springidol</module>
-      <module>springodol-annotation</module>
+    <module>spring-aop</module>
+    <module>springidol-annotation</module>
   </modules>
 
   <name>springinaction</name>
