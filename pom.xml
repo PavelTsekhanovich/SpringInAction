@@ -29,6 +29,7 @@
     <aspectjweaver.version>1.6.4</aspectjweaver.version>
     <javax-ejb.version>3.0</javax-ejb.version>
   </properties>
+
   <build>
     <finalName>springinaction</finalName>
     <plugins>
