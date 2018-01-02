@@ -7,12 +7,12 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>springidol-aspectj</artifactId>
-    <groupId>com.springinaction</groupId>
+    <artifactId>springidol-atinject</artifactId>
     <packaging>jar</packaging>
+    <groupId>com.springinaction</groupId>
     <version>3.0.0</version>
 
-    <name>springidol-aspectj</name>
+    <name>springidol-atinject</name>
     <url>https://github.com/PavelTsekhanovich/SpringInAction</url>
 
     <properties>
@@ -31,15 +31,23 @@
             <version>${spring.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>1.6.2</version>
+            <groupId>${spring.group}</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>${spring.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <version>${spring.version}</version>
         </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
