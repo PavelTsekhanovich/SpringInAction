@@ -15,6 +15,11 @@
     <module>springidol-annotation</module>
       <module>springidol-aspectj</module>
     <module>springidol-atinject</module>
+    <module>springidol-autodiscovery</module>
+    <module>springidol-javaconfig</module>
+    <module>springidol-qualifiers</module>
+    <module>messaging</module>
+    <module>rest-client</module>
   </modules>
 
   <name>springinaction</name>
