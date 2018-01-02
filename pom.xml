@@ -13,6 +13,7 @@
     <module>springidol</module>
     <module>spring-aop</module>
     <module>springidol-annotation</module>
+      <module>springidol-aspectj</module>
   </modules>
 
   <name>springinaction</name>
