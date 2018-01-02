@@ -13,7 +13,7 @@
     <module>springidol</module>
     <module>spring-aop</module>
     <module>springidol-annotation</module>
-      <module>springidol-aspectj</module>
+    <module>springidol-aspectj</module>
     <module>springidol-atinject</module>
     <module>springidol-autodiscovery</module>
     <module>springidol-javaconfig</module>
