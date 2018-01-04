@@ -1,4 +1,6 @@
 package by.spring.action;
 
-public class Contestant {
+public interface Contestant {
+
+    void receiveAward();
 }

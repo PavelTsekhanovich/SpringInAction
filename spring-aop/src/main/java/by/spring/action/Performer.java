@@ -1,4 +1,6 @@
 package by.spring.action;
 
-public class Performer {
+public interface Performer {
+
+    void perform() throws PerformanceException;
 }

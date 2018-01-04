@@ -1,16 +1,14 @@
 package by.spring.action;
 
-public class Magician implements MindReader{
+public class Volunteer implements Thinker {
 
     private String thoughts;
 
     @Override
-    public void interceptThoughts(String thoughts) {
-        System.out.println("Intercepting volunteer's thoughts");
+    public void thinkOfSomething(String thoughts) {
         this.thoughts = thoughts;
     }
 
-    @Override
     public String getThoughts() {
         return thoughts;
     }
