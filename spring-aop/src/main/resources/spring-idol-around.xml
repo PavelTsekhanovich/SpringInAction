@@ -4,6 +4,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 	    http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
+    <bean id="eddie" class="by.spring.action.Instrumentalist">
+        <property name="instrument">
+            <bean class="by.spring.action.Guitar"/>
+        </property>
+    </bean>
+
     <bean id="audience" class="by.spring.action.AroundAudience"/>
 
     <aop:config>
