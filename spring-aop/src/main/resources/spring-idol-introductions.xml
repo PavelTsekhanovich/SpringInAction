@@ -20,7 +20,6 @@
             <aop:after-returning pointcut-ref="performance" method="applaud" />
             <aop:after-throwing pointcut-ref="performance" method="demandRefund" />
         </aop:aspect>
-
         <aop:aspect>
             <aop:declare-parents types-matching="by.spring.action.Performer+"
                                  implement-interface="by.spring.action.Contestant"
