@@ -28,7 +28,6 @@
   <properties>
     <spring.group>org.springframework</spring.group>
     <spring.version>3.0.2.RELEASE</spring.version>
-
     <junut.version>4.5</junut.version>
     <mockito-all.version>1.8.0</mockito-all.version>
     <mockito-core.version>1.8.0</mockito-core.version>
