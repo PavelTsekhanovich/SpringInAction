@@ -21,7 +21,6 @@ public class MindReaderTest {
     @Test
     public void magicianShouldReadVolunteersMind() {
         volunteer.thinkOfSomething("Queen of Hearts");
-
         assertEquals("Queen of Hearts", magician.getThoughts());
     }
 }
