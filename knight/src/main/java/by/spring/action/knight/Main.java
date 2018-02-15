@@ -7,11 +7,14 @@ public class Main {
 
     public static void main(String[] args){
         ApplicationContext context = new ClassPathXmlApplicationContext("knights.xml");
-        Knight knight = (Knight) context.getBean("knight");
-        try {
-            knight.embarkOnQuest();
-        } catch (QuestException e) {
-            e.printStackTrace();
+        Object obj = context.getBean("knight");
+        if (obj instanceof Knight) {
+            Knight knight = (Knight) obj;
+            try {
+                knight.embarkOnQuest();
+            } catch (QuestException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
