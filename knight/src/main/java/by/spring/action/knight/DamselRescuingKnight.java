@@ -1,6 +1,6 @@
 package by.spring.action.knight;
 
-public class DamselRescuingKnight implements Knight{
+public class DamselRescuingKnight implements Knight {
 
     private RescueDamselQuest quest;
 

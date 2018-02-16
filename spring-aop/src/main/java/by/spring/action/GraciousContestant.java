@@ -1,6 +1,6 @@
 package by.spring.action;
 
-public class GraciousContestant implements Contestant{
+public class GraciousContestant implements Contestant {
 
     @Override
     public void receiveAward() {

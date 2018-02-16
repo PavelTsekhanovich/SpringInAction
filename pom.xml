@@ -1,52 +1,52 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>by.spring.action</groupId>
-  <artifactId>springinaction</artifactId>
-  <packaging>pom</packaging>
-  <version>1.0-SNAPSHOT</version>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>by.spring.action</groupId>
+    <artifactId>springinaction</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
 
-  <modules>
-    <module>knight</module>
-    <module>snippets</module>
-    <module>springidol</module>
-    <module>spring-aop</module>
-    <module>springidol-annotation</module>
-    <module>springidol-aspectj</module>
-    <module>springidol-atinject</module>
-    <module>springidol-autodiscovery</module>
-    <module>springidol-javaconfig</module>
-    <module>springidol-qualifiers</module>
-    <module>messaging</module>
-    <module>rest-client</module>
-  </modules>
+    <modules>
+        <module>knight</module>
+        <module>snippets</module>
+        <module>springidol</module>
+        <module>spring-aop</module>
+        <module>springidol-annotation</module>
+        <module>springidol-aspectj</module>
+        <module>springidol-atinject</module>
+        <module>springidol-autodiscovery</module>
+        <module>springidol-javaconfig</module>
+        <module>springidol-qualifiers</module>
+        <module>messaging</module>
+        <module>rest-client</module>
+    </modules>
 
-  <name>springinaction</name>
-  <url>https://github.com/PavelTsekhanovich/SpringInAction</url>
+    <name>springinaction</name>
+    <url>https://github.com/PavelTsekhanovich/SpringInAction</url>
 
-  <properties>
-    <spring.group>org.springframework</spring.group>
-    <spring.version>3.0.2.RELEASE</spring.version>
-    <junut.version>4.5</junut.version>
-    <mockito-all.version>1.8.0</mockito-all.version>
-    <mockito-core.version>1.8.0</mockito-core.version>
-    <cglib-nodep.version>2.2</cglib-nodep.version>
-    <aspectjweaver.version>1.6.4</aspectjweaver.version>
-    <javax-ejb.version>3.0</javax-ejb.version>
-  </properties>
+    <properties>
+        <spring.group>org.springframework</spring.group>
+        <spring.version>3.0.2.RELEASE</spring.version>
+        <junut.version>4.5</junut.version>
+        <mockito-all.version>1.8.0</mockito-all.version>
+        <mockito-core.version>1.8.0</mockito-core.version>
+        <cglib-nodep.version>2.2</cglib-nodep.version>
+        <aspectjweaver.version>1.6.4</aspectjweaver.version>
+        <javax-ejb.version>3.0</javax-ejb.version>
+    </properties>
 
-  <build>
-    <finalName>springinaction</finalName>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+    <build>
+        <finalName>springinaction</finalName>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

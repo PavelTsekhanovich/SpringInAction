@@ -2,11 +2,11 @@ package by.spring.action.knight;
 
 public class Minstrel {
 
-    public void singBeforeQuest(){
+    public void singBeforeQuest() {
         System.out.println("Fa la la; The knight is so brave!");
     }
 
-    public void singAfterQuest(){
+    public void singAfterQuest() {
         System.out.println("Tee hee he; The brave knight did embark on a quest!");
     }
 }

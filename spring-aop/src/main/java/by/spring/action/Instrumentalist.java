@@ -1,6 +1,6 @@
 package by.spring.action;
 
-public class Instrumentalist implements Performer{
+public class Instrumentalist implements Performer {
 
     private Instrument instrument;
 

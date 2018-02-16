@@ -2,7 +2,7 @@ package by.spring.action;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class Instrumentalist implements Performer{
+public class Instrumentalist implements Performer {
 
     @Autowired
     private Instrument instrument;

@@ -10,15 +10,15 @@
         </property>
     </bean>
 
-    <bean id="audience" class="by.spring.action.Audience" />
+    <bean id="audience" class="by.spring.action.Audience"/>
 
     <aop:config>
         <aop:aspect ref="audience">
             <aop:pointcut id="performance" expression="execution(* by.spring.action.Performer.perform(..))"/>
-            <aop:before pointcut-ref="performance" method="takeSeats" />
-            <aop:before pointcut-ref="performance" method="turnOffCellPhones" />
-            <aop:after-returning pointcut-ref="performance" method="applaud" />
-            <aop:after-throwing pointcut-ref="performance" method="demandRefund" />
+            <aop:before pointcut-ref="performance" method="takeSeats"/>
+            <aop:before pointcut-ref="performance" method="turnOffCellPhones"/>
+            <aop:after-returning pointcut-ref="performance" method="applaud"/>
+            <aop:after-throwing pointcut-ref="performance" method="demandRefund"/>
         </aop:aspect>
         <aop:aspect>
             <aop:declare-parents types-matching="by.spring.action.Performer+"

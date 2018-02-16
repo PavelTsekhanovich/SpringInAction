@@ -1,6 +1,6 @@
 package by.spring.action;
 
-public class Piano implements Instrument{
+public class Piano implements Instrument {
 
     public Piano() {
     }

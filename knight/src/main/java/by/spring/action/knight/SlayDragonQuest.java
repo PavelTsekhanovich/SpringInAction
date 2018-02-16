@@ -1,6 +1,6 @@
 package by.spring.action.knight;
 
-public class SlayDragonQuest implements Quest{
+public class SlayDragonQuest implements Quest {
 
     @Override
     public void embark() throws QuestException {

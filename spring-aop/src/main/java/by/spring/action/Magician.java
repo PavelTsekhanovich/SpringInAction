@@ -1,6 +1,6 @@
 package by.spring.action;
 
-public class Magician implements MindReader{
+public class Magician implements MindReader {
 
     private String thoughts;
 

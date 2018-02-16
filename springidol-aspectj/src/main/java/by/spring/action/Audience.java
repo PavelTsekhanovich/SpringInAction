@@ -5,7 +5,8 @@ import org.aspectj.lang.annotation.*;
 @Aspect
 public class Audience {
     @Pointcut("execution(* com.springinaction.springidol.Performer.perform(..))")
-    public void performance() {}
+    public void performance() {
+    }
 
     @Before("performance()")
     public void takeSeats() {

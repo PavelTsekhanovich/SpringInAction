@@ -9,7 +9,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration( { "sneaky-magician.xml" })
+@ContextConfiguration({"sneaky-magician.xml"})
 public class MindReaderTest {
 
     @Autowired

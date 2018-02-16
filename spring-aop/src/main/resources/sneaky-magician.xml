@@ -11,8 +11,9 @@
 
     <aop:config>
         <aop:aspect ref="magician">
-            <aop:pointcut id="thinking" expression="execution(* by.spring.action.Thinker.thinkOfSomething(String)) and args(thoughts)" />
-            <aop:before pointcut-ref="thinking" method="interceptThoughts" arg-names="thoughts" />
+            <aop:pointcut id="thinking"
+                          expression="execution(* by.spring.action.Thinker.thinkOfSomething(String)) and args(thoughts)"/>
+            <aop:before pointcut-ref="thinking" method="interceptThoughts" arg-names="thoughts"/>
         </aop:aspect>
     </aop:config>
 </beans>

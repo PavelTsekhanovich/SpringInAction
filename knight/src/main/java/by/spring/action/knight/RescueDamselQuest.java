@@ -1,6 +1,6 @@
 package by.spring.action.knight;
 
-public class RescueDamselQuest implements Quest{
+public class RescueDamselQuest implements Quest {
 
     @Override
     public void embark() throws QuestException {
