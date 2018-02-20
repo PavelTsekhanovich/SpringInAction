@@ -7,7 +7,10 @@ public class Main {
 
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring-idol-annotation.xml");
-        Piano piano = (Piano) context.getBean("piano");
-        piano.play();
+        Object obj = context.getBean("piano");
+        if (obj instanceof Piano) {
+            Instrument instrument = (Instrument) obj;
+            instrument.play();
+        }
     }
 }
