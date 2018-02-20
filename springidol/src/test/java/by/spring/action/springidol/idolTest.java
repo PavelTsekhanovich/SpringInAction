@@ -12,7 +12,7 @@ import static java.lang.System.setProperty;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration({"classpath:by/spring/action/springidol/spring-idol.xml"})
+@ContextConfiguration({"classpath:spring-idol.xml"})
 public class idolTest {
 
     @BeforeClass
