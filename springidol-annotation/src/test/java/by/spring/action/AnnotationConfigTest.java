@@ -1,4 +1,4 @@
-/*package by.spring.action;
+package by.spring.action;
 
 import static org.junit.Assert.*;
 
@@ -26,4 +26,4 @@ public class AnnotationConfigTest {
         assertNotNull(eddie.getInstrument());
         assertEquals(guitar, eddie.getInstrument());
     }
-}*/
+}
