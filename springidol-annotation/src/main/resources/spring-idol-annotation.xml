@@ -11,7 +11,7 @@
         <property name="song" value="Running with the Devil"/>
     </bean>
 
-    <bean class="by.spring.action.Guitar"/>
+    <!--<bean class="by.spring.action.Guitar"/>-->
 
     <bean id="piano" class="by.spring.action.Piano"/>
 </beans>
