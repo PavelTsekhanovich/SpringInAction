@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"
        xmlns:p="http://www.springframework.org/schema/p"
        default-init-method="turnOnLights" default-destroy-method="turnOffLights">
 
@@ -61,6 +63,36 @@
 
     <bean id="carl" class="by.spring.action.springidol.Instrumentalist">
         <property name="song" value="#{kenny2.song}"/>
+    </bean>
+
+    <bean id="stan" class="by.spring.action.springidol.Instrumentalist">
+        <property name="song" value="#{systemProperties.STANS_SONG}"/>
+    </bean>
+
+    <util:list id="songList">
+        <bean class="by.spring.action.springidol.Song">
+            <constructor-arg value="That Old Black Magic"/>
+            <constructor-arg value="Arlen and Mercer"/>
+            <constructor-arg value="That old black magic has me in its spell..."/>
+        </bean>
+        <bean class="by.spring.action.springidol.Song">
+            <constructor-arg value="Every Little Thing She Does is Magic"/>
+            <constructor-arg value="Sting"/>
+            <constructor-arg value="Though Ive tried before to tell her..."/>
+        </bean>
+        <bean class="by.spring.action.springidol.Song">
+            <constructor-arg value="Magic Carpet Ride"/>
+            <constructor-arg value="Moreve and Kay"/>
+            <constructor-arg value="I like to dream yes, yes, right between my sound machine..."/>
+        </bean>
+    </util:list>
+
+    <bean id="magicSongBook" class="by.spring.action.springidol.SongBook">
+        <constructor-arg value="#{songList.![title]}"/>
+    </bean>
+
+    <bean id="ricky" class="by.spring.action.springidol.Instrumentalist">
+        <property name="song" value="#{magicSongBook.pickASong()}"/>
     </bean>
 
 </beans>
