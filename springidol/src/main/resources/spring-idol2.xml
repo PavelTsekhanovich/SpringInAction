@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="tigerReplacer" class="by.spring.action.springidol.TigerReplacer"/>
+
+    <bean id="magicBox" class="by.spring.action.springidol.MagicBoxImpl">
+        <replaced-method name="getContents" replacer="tigerReplacer"/>
+    </bean>
+
+    <bean id="harry" class="by.spring.action.springidol.Magician">
+        <property name="magicBox" ref="magicBox"/>
+        <property name="magicWords" value="Bippity boppity boo"/>
+    </bean>
+
+</beans>
