@@ -65,9 +65,9 @@
         <property name="song" value="#{kenny2.song}"/>
     </bean>
 
-    <bean id="stan" class="by.spring.action.springidol.Instrumentalist">
+    <!--<bean id="stan" class="by.spring.action.springidol.Instrumentalist">
         <property name="song" value="#{systemProperties.STANS_SONG}"/>
-    </bean>
+    </bean>-->
 
     <util:list id="songList">
         <bean class="by.spring.action.springidol.Song">
