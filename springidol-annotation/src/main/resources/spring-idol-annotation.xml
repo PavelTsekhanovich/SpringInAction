@@ -7,9 +7,9 @@
 
     <context:annotation-config/>
 
-    <bean id="eddie2" class="by.spring.action.Instrumentalist">
-        <property name="song" value="Running with the Devil"/>
-    </bean>
+    <!--<bean id="eddie2" class="by.spring.action.Instrumentalist">-->
+        <!--<property name="song" value="Running with the Devil"/>-->
+    <!--</bean>-->
 
     <bean class="by.spring.action.Guitar"/>
 

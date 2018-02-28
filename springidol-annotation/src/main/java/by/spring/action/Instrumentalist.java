@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class Instrumentalist implements Performer {
 
-    @Autowired
+    @Autowired(required = false)
     private Instrument instrument;
 
     private String song;
