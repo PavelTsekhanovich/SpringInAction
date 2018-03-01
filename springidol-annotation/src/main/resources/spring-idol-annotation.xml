@@ -11,7 +11,9 @@
         <!--<property name="song" value="Running with the Devil"/>-->
     <!--</bean>-->
 
-    <bean class="by.spring.action.Guitar"/>
+    <bean class="by.spring.action.Guitar">
+        <qualifier value="stringed"/>
+    </bean>
 
     <bean id="piano" class="by.spring.action.Piano"/>
 </beans>
