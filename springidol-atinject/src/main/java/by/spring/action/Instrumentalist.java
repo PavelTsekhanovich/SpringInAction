@@ -1,8 +1,10 @@
 package by.spring.action;
 
-import javax.inject.Inject;
-import javax.sound.midi.Instrument;
+import org.springframework.stereotype.Component;
 
+import javax.inject.Inject;
+
+@Component
 public class Instrumentalist implements Performer{
 
     @Inject
@@ -10,6 +12,10 @@ public class Instrumentalist implements Performer{
 
     @Override
     public void perform() throws PerformanceException {
+        instrument.play();
+    }
 
+    public Instrument getInstrument() {
+        return instrument;
     }
 }
